@@ -1,0 +1,627 @@
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/materialicons/v129/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: none;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+}
+
+:root {
+  --colordiv: #D4E9E2;
+  --colorfont: #1E3932;
+  --colorfont2: rgba(0,0,0,.87);
+  --colorhover: #008248;
+  --colorfont-footer: rgba(0,0,0,.56);
+}
+
+header {
+  box-shadow: 0px 2px 2px rgb(0, 0, 0, 10%);
+  padding: 0px 40px;
+}
+
+.container {
+  max-width: 1440px;
+}
+
+.none {
+  display: none;
+}
+
+.banner-mobile {
+  display: none;
+}
+
+header .container {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  font-size: 13px;
+  font-weight: 800;
+  color: rgba(0,0,0,.87);
+  letter-spacing: 2px;
+}
+
+nav a:hover {
+  color: var(--colorhover);
+}
+
+ul {
+  display: flex;
+}
+
+li:first-child {
+  padding-left: 0px;
+}
+
+li {
+  padding-left: 20px;
+}
+
+.logo {
+  width: 51px;
+  height: 51px;
+}
+
+.history_img {
+  width: 120px;
+}
+
+.location {
+  width: 18px;
+}
+
+.header-buttons {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+}
+
+.header-buttons img {
+  margin-right: 20px;
+}
+
+.header-buttons a {
+  color: var(--colorfont2);
+  margin-right: 15px;
+}
+
+.white {
+  border: 1px solid black;
+  border-radius: 50px;
+  padding: 3px 16px;
+  transition: all ease .2s;
+}
+
+.white:hover {
+  background-color: black;
+  color: white;
+  transform: scale(1.1);
+}
+
+.header-buttons .bblack {
+  color: white;
+  border-radius: 50px;
+  background-color: black;
+  padding: 3px 20px;
+  transition: all ease .1s;
+  border: 1px solid black;
+}
+
+.header-buttons .bblack:hover {
+  background-color: white;
+  color: var(--colorfont);
+} 
+
+.pointers {
+  display: flex;
+  position: absolute;
+  width: 300px;
+  top: 450px;
+  left: 630px;
+}
+
+.pointer {
+  width: 11px;
+  height: 11px;
+  margin: 3px;
+  border-radius: 30px;
+  background-color: rgba(0,0,0,0.5);
+  cursor: pointer;
+  transition: all ease 0.1s;
+}
+
+.pointer:hover {
+  background-color: rgba(255,255,255,0.5);
+  transform: scale(1.2);
+}
+
+.active-pointer {
+  background-color: rgba(255,255,255,0.5);
+}
+
+/* content */
+
+.banner {
+  background: url('../media/bannerslide4.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 380px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 32px 0px;
+}
+
+.content-retangular {
+  background-color: var(--colordiv);
+  width: 1400px;
+  padding: 35px 50px;
+  text-align: center;
+}
+
+.content--text p {
+  text-align: center;
+  font-size: 20px;
+}
+
+.content .button_saibamais a{
+  font-weight: 600;
+  border: 1px solid var(--colorfont);
+  border-radius: 30px;
+  color: var(--colorfont);
+  padding: 3px 15px;
+}
+
+.content .button_saibamais {
+  display: inline-block;
+  transition: all ease .1s;
+}
+
+.content .button_saibamais:hover {
+  transform: scale(1.1);
+}
+
+/* default */
+
+.content-background {
+  margin-bottom: 32px;
+}
+
+.invert .photo-drinks img,
+.right .photo-sb img,
+.right .photo-donate img {
+  width: 100%;
+  height: 100%;
+}
+
+.invert .button_baixenossoapp,
+.right .button_baixenossoapp {
+  display: inline-block;
+  padding: 3px 15px;
+}
+
+/* content-background */
+
+.content--photos-texts {
+  display: flex;
+  background-color: var(--colordiv);
+}
+
+.content--photos-texts .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 35px 100px;
+  width: 54%;
+  margin-bottom: 43px;
+}
+
+.content--photos-texts .text h2 {
+  font-weight: 300;
+  margin: 0;
+}
+
+.content--photos-texts .text p {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.content--photos-texts .button_baixenossoapp {
+  border: 1px solid var(--colorfont);
+  border-radius: 30px;
+  padding: 3px 10px;
+  transition: all ease .1s;
+}
+
+.content--photos-texts .button_baixenossoapp:hover {
+  transform: scale(1.1);
+}
+
+.content--photos-texts .button_baixenossoapp a {
+  color: var(--colorfont);
+  font-weight: 600;
+}
+
+/* invert */
+
+.invert .content--photos-texts {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+}
+
+.invert .photo-drinks {
+  display: flex;
+  width: 56%;
+  height: auto;
+}
+
+.invert .button_baixenossoapp {
+  display: inline-block;
+  padding: 3px 15px;
+}
+
+/* donate */
+
+.right .photo-donate {
+  width: 56%;
+}
+
+/* footer */
+
+footer {
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 0px 4px #333;
+}
+
+footer .container {
+  width: 1066px;
+  padding-top: 52px;
+}
+
+footer .footer-fist {
+  display: flex;
+}
+
+footer .footer-table {
+  width: 100%;
+  max-width: 185px;
+  margin-right: 32px;
+}
+
+footer .global-footer {
+  border-bottom: 2px solid #E5E5E5;
+}
+
+footer h3 {
+  font-weight: 400;
+  margin: 0px;
+}
+
+footer .footer-table ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin-top: 25px;
+}
+
+footer .footer-table ul li {
+  padding: 0;
+  margin-bottom: 20px;
+  line-height: 23px;
+}
+
+footer .footer-table ul li a {
+  color: var(--colorfont-footer);
+}
+
+footer .footer-table ul li a:hover {
+  color: #000;
+}
+
+.history_img-footer {
+  width: 120px;
+  height:50px;
+}
+
+.social {
+  display: flex;
+  margin-top: 50px;
+}
+
+.social-image {
+  margin-left: 16px;
+  transition: all ease .2s;
+}
+
+.social-image:hover {
+  transform: scale(1.2);
+}
+
+.social-image img{
+  margin-bottom: 10px;
+}
+
+.cp {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.cp p {
+  padding: 0px 10px;
+  border-left:1px solid #000;
+  cursor: pointer;
+}
+
+.cp p:hover {
+  color: var(--colorfont-footer);
+}
+
+.cp p:first-child {
+  border: 0;
+}
+
+.credits {
+  margin-bottom: 80px;
+}
+
+.credits p {
+  color: var(--colorfont-footer);
+  margin-left: 8px;
+  font-weight: 400;
+}
+
+@media (min-width:450px) and (max-width:768px) {
+  header ul, .header-buttons {
+    display: none;
+  }
+
+  .banner {
+    background-image: none;
+    height: auto;
+  }
+
+  .banner-mobile {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .none {
+    display: block;
+  }
+
+  .material-icons {
+    display: block;
+  }
+
+  .pointers {
+    display: none;
+    position: absolute;
+    bottom: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .right .content--photos-texts,
+  .invert .content--photos-texts {
+    justify-content: center;
+    flex-direction: column;
+    width: auto
+  }
+
+  .invert .photo-drinks,
+  .right .photo-sb,
+  .right .photo-donate {
+    width: auto;
+  }
+
+  .content--photos-texts .text {
+    width: auto;
+    padding: 20px;
+  }
+
+  .content--photos-texts .text p {
+    font-size: 16px;
+  }
+
+  footer .footer-fist {
+    flex-direction: column;
+  }
+
+  footer .global-footer {
+    margin: 0px 16px;
+  }
+
+  footer .footer-table {
+    display: flex;
+    justify-content: space-between;
+    max-width: none;
+  }
+
+  footer .footer-table .none img {
+    margin-right: 10px;
+    width: 15px;
+  }
+
+  footer .footer-table h3 {
+    margin-bottom: 25px;
+    margin-left: 10px;
+  }
+
+  footer .footer-table ul {
+    display: none;
+  }
+
+  .cp {
+    display: block;
+    margin-bottom: 40px;
+  }
+
+  .cp p {
+    border: 0;
+    margin-left: 10px;
+  }
+
+  .credits {
+    margin-left: 10px;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 450px){
+  header ul, .header-buttons {
+    display: none;
+  }
+
+  header {
+    padding: 0px 10px;
+  }
+
+  .banner {
+    background-image: none;
+    height: auto;
+  }
+
+  .banner-mobile {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .none {
+    display: block;
+  }
+
+  .material-icons {
+    display: block;
+  }
+
+  .pointers {
+    display: none;
+    position: absolute;
+    bottom: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .right .content--photos-texts,
+  .invert .content--photos-texts {
+    justify-content: center;
+    flex-direction: column;
+    width: auto
+  }
+
+  .invert .photo-drinks,
+  .right .photo-sb,
+  .right .photo-donate {
+    width: auto;
+  }
+
+  .content--text p {
+    font-size: 16px;
+  }
+
+  .content--photos-texts .text {
+    width: auto;
+    padding: 20px;
+  }
+
+  .content--photos-texts .text h2 {
+    font-size: 20px;
+  }
+
+  .content--photos-texts .text p {
+    font-size: 16px;
+  }
+
+  footer .footer-fist {
+    flex-direction: column;
+  }
+
+  footer .global-footer {
+    margin: 0px 16px;
+  }
+
+  footer .footer-table {
+    display: flex;
+    justify-content: space-between;
+    max-width: none;
+  }
+
+  footer .footer-table .none img {
+    margin-right: 10px;
+    width: 15px;
+  }
+
+  footer .footer-table h3 {
+    margin-bottom: 25px;
+    margin-left: 10px;
+  }
+
+  footer .footer-table ul {
+    display: none;
+  }
+
+  .cp {
+    display: block;
+    margin-bottom: 40px;
+  }
+
+  .cp p {
+    border: 0;
+    margin-left: 10px;
+  }
+
+  .credits {
+    margin-left: 10px;
+    margin-bottom: 0;
+  }
+
+  .credits p {
+    font-size: 13px;
+  }
+  
+  
+}
+
+@media (min-width: 1440px) and (max-width:2560px) {
+  body {
+    width: 1400px;
+    margin: auto;
+  }
+
+  .pointers {
+    display: none;
+  }
+}
