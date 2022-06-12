@@ -28,6 +28,10 @@
   --colorfont-footer: rgba(0,0,0,.56);
 }
 
+.navv {
+  display: none;
+}
+
 header {
   box-shadow: 0px 2px 2px rgb(0, 0, 0, 10%);
   padding: 0px 40px;
@@ -62,6 +66,7 @@ nav a {
   font-weight: 800;
   color: rgba(0,0,0,.87);
   letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 nav a:hover {
@@ -352,6 +357,7 @@ footer .footer-table ul li a:hover {
 .history_img-footer {
   width: 120px;
   height:50px;
+  margin-bottom: 30px;
 }
 
 .social {
@@ -402,8 +408,80 @@ footer .footer-table ul li a:hover {
 }
 
 @media (min-width:450px) and (max-width:768px) {
-  header ul, .header-buttons {
+
+  .header-buttons {
     display: none;
+  }
+
+  .celular {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu-mobile {
+    position: fixed;
+    transform: translate(-347px, -52px);
+    transition: all ease .5s;
+  }
+
+  .navv {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    border-top: 2px solid #e0e0e0;
+  }
+
+  .celular .white,
+  .celular .bblack {
+    margin: 5px 0px;
+  }
+  .celular img  {
+    margin: 0;
+  }
+
+  .celular .white {
+    padding: 10px 100px;
+  }
+
+  .celular .bblack {
+    padding: 10px 69px;
+  }
+
+  header ul {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    background: white;
+    height: 1000vh;
+    padding: 0px;
+    margin: 0;
+  }
+
+  header ul li {
+    margin-bottom: 20px;
+    padding: 0;
+  }
+
+  header ul li:last-child {
+    padding-bottom: 30px;
+  }
+
+  nav a {
+    font-size: 16px;
+    padding: 0px 30px;
+    letter-spacing: 0px;
+    font-weight: 600;
+    text-transform: none;
+    color: var(--colorfont-footer);
+  }
+
+  header li:first-child {
+    margin-top: 50px;
+    padding: 0px;
   }
 
   .banner {
@@ -423,6 +501,7 @@ footer .footer-table ul li a:hover {
 
   .material-icons {
     display: block;
+    margin: 38px;
   }
 
   .pointers {
@@ -500,12 +579,85 @@ footer .footer-table ul li a:hover {
 }
 
 @media (max-width: 450px){
-  header ul, .header-buttons {
+  
+  
+  .header-buttons {
     display: none;
   }
 
   header {
-    padding: 0px 10px;
+    padding: 0px 32px;
+  }
+
+  header ul {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 308px;
+    background: white;
+    height: 1000vh;
+    padding: 0px;
+    margin: 0;
+  }
+
+  header ul li {
+    margin-bottom: 20px;
+    padding: 0;
+  }
+
+  header ul li:last-child {
+    padding-bottom: 30px;
+  }
+
+  nav a {
+    font-size: 16px;
+    padding: 0px 30px;
+    letter-spacing: 0px;
+    font-weight: 600;
+    text-transform: none;
+    color: var(--colorfont-footer);
+  }
+
+  header li:first-child {
+    margin-top: 50px;
+    padding: 0px;
+  }
+
+  .celular {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu-mobile {
+    position: fixed;
+    transform: translate(-347px, -52px);
+    transition: all ease .5s;
+  }
+
+  .navv {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    border-top: 2px solid #e0e0e0;
+  }
+
+  .celular .white,
+  .celular .bblack {
+    margin: 5px 0px;
+  }
+  .celular img  {
+    margin: 0;
+  }
+
+  .celular .white {
+    padding: 10px 100px;
+  }
+
+  .celular .bblack {
+    padding: 10px 69px;
   }
 
   .banner {
@@ -523,8 +675,14 @@ footer .footer-table ul li a:hover {
     display: block;
   }
 
+  .navmaterial-icons {
+
+    z-index: 1000;  
+  }
+
   .material-icons {
     display: block;
+    margin: 30px;
   }
 
   .pointers {

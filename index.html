@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Starbucks</title>
   <!-- LINKS -->
+  <script src="./script.js"></script>
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -15,17 +16,26 @@
     <div class="container">
       <nav>
         <img class="logo" src="https://www.starbucks.com.br/public/img/icons/starbucks-nav-logo.svg" alt="logo-starbucks">
-        <ul>
-          <li><a href="">MENU</a></li>
-          <li><a href="">REWARDS</a></li>
-          <li><a href="">NOSSO CAFÉ</a></li>
-          <li><a href="">IMPACTO SOCIAL</a></li>
-        </ul>
+        <div id="menu-area" class="menu-mobile">
+          <ul>
+            <li><a href="">Menu</a></li>
+            <li><a href="">Rewards</a></li>
+            <li><a href="">Nosso Café</a></li>
+            <li><a href="">Impacto Social</a></li>
+            <div class="navv">
+              <div id="" class="header-buttons celular">
+                <img class="history_img" src="https://www.starbucks.com.br/public/img/icons/sb-historias-logo.svg" alt="sb-historias-logo">
+                <a class="button white" href="#">Entrar</a>
+                <a class="button bblack" href="#">Participe Agora</a>
+              </div>
+            </div>
+          </ul>
+        </div>
       </nav>
-      <div class=".material-icons">
+      <div onclick="menuToggle()" id="menu-oppener" class="navmaterial-icons">
         <i class="material-icons">menu</i>
       </div>
-      <div class="header-buttons">
+      <div  class="header-buttons">
         <img class="history_img" src="https://www.starbucks.com.br/public/img/icons/sb-historias-logo.svg" alt="sb-historias-logo">
         <img class="location" src="./assets/location.png" alt="">
         <a href="#">Encontre uma loja</a>
